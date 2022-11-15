@@ -1,0 +1,216 @@
+/* 各个页面相同的样式表 : 头, 尾部 */
+/* 版心 */
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 快捷导航 */
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+.shortcut .wrapper{
+    height: 52px;
+    /* background-color: pink; */
+}
+.shortcut .wrapper ul{
+    float: right;
+}
+.shortcut .wrapper li{
+    float: left;
+    line-height: 52px;
+}
+
+.shortcut .wrapper li a{
+    padding: 0 16px;
+    color: #dcdcdc;
+    font-size: 14px;
+    border-left: 1px solid#666666;
+}
+/* 清除a的边框线: 第一个li里面的a */
+.shortcut .wrapper li:first-child a{
+    border: none;
+}
+
+.shortcut .wrapper li span{
+    margin-right: 8px;
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+    vertical-align: middle;
+}
+
+/* 头部 */
+/* logo搜索引擎优化 */
+.header{
+    margin: 30px auto;
+    height: 70px;
+    /* background-color: pink; */
+}
+.logo{
+    float: left;
+}
+.logo h1 a{
+    display: block;
+    width: 207px;
+    height: 70px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    font-size: 0;
+}
+
+.nav{
+    float: left;
+}
+.nav ul{
+    margin-left: 40px;
+}
+
+.nav ul li{
+    float: left;
+    line-height: 70px;
+    margin-right: 48px;
+}
+.nav ul li a{
+    padding-bottom: 7px;
+}
+
+.nav ul li a:hover{
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+.search{
+    position: relative;
+    float: left;
+    margin-left: 34px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.search input{
+    position: relative;
+    padding-left: 31px;
+    background-color: #fff;
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+.search input::placeholder{
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.search span{
+    position: absolute;
+    left: 2px;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -70px;   
+}
+.car{
+    position: relative;
+    float: left;
+    margin-top: 28px;
+    margin-left: 15px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/sprites.png);
+    background-position: -119px -69px;
+
+}
+.car span{  
+    position: absolute;
+    left: 13px;
+    top: -5px;
+
+    text-align: center;
+    line-height: 15px;
+    width: 20px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #e26237;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+
+/* 版权 */
+.footer{
+    height: 342px;
+    background-color: #333;
+}
+.footer .wrapper{
+    width: 1393px;
+}
+.footer .wrapper .top{
+    padding-top: 60px;
+    padding-left: 135px;
+    height: 172px;
+    /* background-color: pink; */
+    border-bottom: 3px solid #434343;
+
+}
+
+.footer .wrapper .top li{
+    position: relative;
+    margin-right: 300px;
+    padding-left: 77px;
+    width: 192px;
+    height: 58px;
+    float: left;
+    color: #fff;
+    line-height: 58px;
+    font-size: 28px;
+}
+.footer .wrapper .top li:last-child{
+    margin-right: 0;
+}
+.footer .wrapper .top li::before{
+    /* display: inline-block; */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content:"";
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/sprites.png);
+    vertical-align: middle;
+}
+.footer .wrapper .top li:nth-child(2)::before{
+    background-image: url(../images/sprites.png);
+    background-position: -130px 0;
+}
+.footer .wrapper .top li:nth-child(3)::before{
+    background-image: url(../images/sprites.png);
+    background-position: -61px 0;
+}
+
+.footer .wrapper .bottom{
+    /* background-color: antiquewhite; */
+    height: 170px;
+}
+
+.footer .wrapper .bottom ul{
+    margin-left: 428px;
+    padding-top: 40px;
+}
+.footer .wrapper .bottom ul li{
+    display: inline-block;
+}
+.footer .wrapper .bottom ul a{
+    font-size: 14px;
+    color: #999999;
+}
+.footer .wrapper .bottom p{
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #999999;
+}
